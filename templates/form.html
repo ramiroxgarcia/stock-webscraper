@@ -1,4 +1,15 @@
-{% block title %}<h1>Please enter a stock symbol</h1>{% endblock %}
+<html>
+<head>
+<style>
+h1 {text-align: center; font-family:courier; color:rgb(255, 99, 71);}
+p {text-align: center; font-family:courier; color:rgb(255, 99, 71);}
+div {text-align: center;}
+body {background-image: url('https://www.otaquest.com/wp-content/uploads/2021/07/eren-yeager-feature-image-1024x576.png');}
+</style>
+</head>
+<body>
+
+{% block title %}<h1>Enter a stock symbol</h1>{% endblock %}
 
 {% block content %}
 <form action ="#" method ="post">
@@ -7,3 +18,4 @@
     <p><input type="submit" value="submit"/></p>
 </form>
 {% endblock %}
+
