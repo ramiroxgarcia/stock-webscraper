@@ -1,10 +1,11 @@
 <html>
 <head>
 <style>
-h1, h2 {
+h1{
     text-align: center;
     font-family:courier;
     color:rgb(255, 99, 71);
+    font-size: 40px;
     }
 p {
     text-align: center;
@@ -21,7 +22,7 @@ body {
 </head>
 <body>
 
-{% block content %} <h2> The price of {{ stock }} is </h2> {% endblock %}
+{% block content %} <h1> {{ stock }} </h1> {% endblock %}
 
-{% block item %} <h1> ${{ price }} </h1> {% endblock %}
+{% block item %} <h1> {{ price }} </h1> {% endblock %}
 
