@@ -14,7 +14,8 @@ def stock(name1):  # function to scrape price with n
 
         stock_price = soup.find('fin-streamer', {'data-test': 'qsp-price'})['value']
 
-        return "The price of " + name1.upper() + " is $" + stock_price
+        return render_template("pricepage.html", stock=name1.upper(), price=stock_price)
+
     except:  # if exception return exception message to web page
         return "Not a valid stock symbol"
 
